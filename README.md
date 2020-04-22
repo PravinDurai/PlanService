@@ -1,16 +1,17 @@
 # PlanService
 
-# /plan
+# GET : https://p-api-gateway.cfapps.io/benefit/plan
+# Header -> Bearer : token
 # Used to get the information of all the available plans
 
-# /plan/{id}
+# https://p-api-gateway.cfapps.io/benefit/plan/{id}
+# Header -> Bearer : token
 # Used to fetch only a single plan based on the id in the url path parameter.
 
-# /user/{username}/plan
+# GET : https://p-api-gateway.cfapps.io/benefit/user/{username}/plan
+# Header -> Bearer : token
 # Used to fetch only a single plan based on the usetname in the url path parameter.
 
-# /plan (Same as that of the first but this is POST Mapping)
+# POST : https://p-api-gateway.cfapps.io/benefit/plan
+# Header -> Bearer : token
 # It's actually used for creating the plan
-
-# /association
-# This is used to map any random plan to a given user
